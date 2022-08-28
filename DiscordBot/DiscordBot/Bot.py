@@ -2,7 +2,7 @@ import nextcord
 from nextcord import Interaction
 from nextcord.ext import commands
 import urllib
-from eth_server import *
+from server_data import *
 
 # ===== Variables =====
 intents = nextcord.Intents.default()
@@ -16,7 +16,7 @@ client = commands.Bot(command_prefix='!', intents=intents)
 @client.event
 async def on_ready():
     print("------------------------------------")
-    print("[+] David Is Connected to the server")
+    print("[+] BotName Is Connected to the server")
 
 
 # ==== member activity =======
@@ -38,9 +38,7 @@ async def hello_command(interaction: Interaction):
     await interaction.response.send_message('Hei')
 
 
-# @client.slash_command(name="help", description="Show to search engine", guild_ids=[server_ID])
-# async def help_command(interaction: Interaction, ):
-# await interaction.response.send_message(urllib - "https://www.google.com/")
+
 
 
 client.run(BOT_TOKEN)
