@@ -1,7 +1,7 @@
 import nextcord
 from nextcord import Interaction
 from nextcord.ext import commands
-import urllib
+
 from server_data import *
 
 # ===== Variables =====
