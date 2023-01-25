@@ -2,7 +2,7 @@
 
 # Portscanner v1.2
 # 25.01.23
-# improved protscanner that uses ThreadPoolExecutor that is 
+# improved portscanner that uses ThreadPoolExecutor that is 
 # It is used to create and manage a pool of worker threads that can be used to execute tasks concurrently.
 
 import argparse
