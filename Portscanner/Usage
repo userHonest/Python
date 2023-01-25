@@ -1,0 +1,11 @@
+
+Python Modules:  
+
+import argparse
+import socket
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from colorama import init, Fore
+
+Usage : python3 Portscanner.py -p 1-65535 <ip> 
+Comments: -p can be any number from 1 - 65535 , if you don't what to scan all ports , add less ports. examples -p 1-5000
+-h for help
