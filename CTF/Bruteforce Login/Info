@@ -1,0 +1,9 @@
+import mechanize
+import logging
+import ThreadPoolExecutor
+or pip install some are allready installed with the python library
+
+You need a http url
+You need a username textfile.txt
+You need a password textfile.txt
+
