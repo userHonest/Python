@@ -1,0 +1,16 @@
+─$ python ip_locate.py -h
+usage: ip_locate.py [-h] (-ip IP_ADDRESS | -file FILE_PATH)
+
+options:
+  -h, --help            show this help message and exit
+  -ip IP_ADDRESS, --ip-address IP_ADDRESS
+                        IP address to retrieve details for
+  -file FILE_PATH, --file-path FILE_PATH
+                        File path to a CSV or text file containing IP
+                        addresses
+
+
+INFO:
+[+] Test your own IP's
+[+] Ipinfo is free, but it lookups are limited each month, if you want to scrape the web, you need to pay 
+https://ipinfo.io/
