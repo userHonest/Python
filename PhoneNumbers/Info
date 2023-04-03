@@ -1,0 +1,22 @@
+## INFO ##
+
+[+] Do you want to have friends, loving relationships, family and respect, then dont creep around.
+[+] This was a test, using OpenCage API  to try and geolocate my own tlf number.
+[+] Some carriers around the world block the GeoLoaction
+
+[+] Usage 
+
+C:\Documents\python Creep.py -h
+usage: Creep.py [-h] [-all] number
+
+Scan a Phone-Number and retrieve its information
+
+positional arguments:
+  number               The Phone-Number to scan
+
+options:
+  -h, --help           show this help message and exit
+  -all, --all-results  Print all Geo-Location results
+
+example : python Creep.py +<countryNumber><number> or add the -all flag to get more geolocation results
+
