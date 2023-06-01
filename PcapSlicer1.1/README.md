@@ -7,13 +7,12 @@ This script requires Python 3.x and the following Python libraries installed:
 - base64
 - binascii
 
--------------------------------------------------------------------------------->
+
 You can install these libraries using pip:
 type on terminal : 
 
 pip install -r requirements.txt
 
--------------------------------------------------------------------------------->
 You can add additional arguments to perform different actions on the pcap file:
 
 python slicer.py -h
@@ -36,6 +35,6 @@ Count the type of packets in the file
   -source, --print_source_info
                         Print source IP and MAC addresses of IP and UDP
                         packets
------------------------------------------------------------------------------------>
+
 Usage:
 python slicer.py -F <your_pcap_file.pcap>
