@@ -156,7 +156,7 @@ try:
 
         if threadA.is_alive():
             print("Taking too long to check for long-running transactions. Operation timed out.")
-            t._stop()
+            threadA._stop()
 
 
     ## running all 
