@@ -1,0 +1,47 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sprint weeks
+weeks = np.arange(1, 5)
+
+# Average scores for each week
+user_scores = np.array([4.6, 4.3, 4.2, 4.3])
+
+# Calculating average of averages
+team_score = np.mean(user_scores)
+
+# Create a numpy array filled with the team score for each week
+team_scores_for_weeks = np.full((4,), team_score)
+
+fig, ax = plt.subplots(figsize=(10, 8))
+
+# Plot the team average score as a line
+ax.plot(weeks, team_scores_for_weeks, linestyle='-', color='salmon', linewidth=1.0)
+
+# Highlight the weekly average scores as points
+ax.scatter(weeks, user_scores, color='blue', zorder=5)
+
+# Add a line between each red dot
+ax.plot(weeks, user_scores, color='blue', linestyle='--')
+
+# Adding grid
+ax.grid(True, linestyle='--', alpha=0.6)
+
+# Set the title and labels
+ax.set_title('Agile Project Satisfaction Chart', fontsize=16)
+ax.set_xlabel('Sprint Weeks', fontsize=14)
+ax.set_ylabel('Average Score', fontsize=14)
+
+# Set the limits of y-axis
+ax.set_ylim([0, 5])
+
+# Set the ticks of x-axis and y-axis
+ax.set_xticks(weeks)
+ax.set_yticks(np.arange(0, 5.5, 0.5))
+
+# Add text label to the trend line
+ax.text(1, team_score + - 0.1, 'average score line', fontsize=10, color='black', verticalalignment='top')
+
+plt.show()
+
+
