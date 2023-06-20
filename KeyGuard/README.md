@@ -1,0 +1,23 @@
+Password Manager
+KeyGuard
+Version 1.0
+
+Description: Password Managaer that store data in a bin file
+the data in the bin file is encrypted and salted.
+User can later display the data
+User can create own login password.
+
+
+This program need to be compiled with make 
+
+First: 
+run pip install -r requirements.txt
+
+Then:
+Open the Makefile, at the end of build: command you can replace the name of the executable.
+
+Then:
+In the same directory, run make, then all the sourcefiles will compile to one executable.
+
+Info: Check the folders made for windows.exe
+Program is most used on Linux.
