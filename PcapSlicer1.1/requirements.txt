@@ -1,3 +1,0 @@
-scapy
-base64
-binascii
